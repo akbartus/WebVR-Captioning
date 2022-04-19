@@ -1,0 +1,38 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Captioning in Web VR</title>
+    <script src='https://aframe.io/releases/1.3.0/aframe.min.js'></script>
+    <script src='js/main.js'></script>
+</head>
+
+<body>
+    <a-scene>
+        <a-assets>
+            <a-asset-item id="room" src="3d/room.glb"></a-asset-item>
+            <img src="img/camera.png" id="cam">
+        </a-assets>
+        <a-entity id="task" position="0 0 -1" geometry="primitive:plane" material="color:#605f5c"
+            text="value: Take the photo of the following \n and see the magic happen:\n\n I  have a chain but I'm not a prisoner,\n I have a frame but I'm not a photo,\n I have wheels but I'm not a car,\n I have a saddle but I'm not a horse,\n I have pedals but I'm not a piano; color: #fff; align:center">
+        </a-entity>
+        <a-camera position="0 0 0" look-controls="enabled: true" cursor="fuse: false; rayOrigin: mouse;"
+            raycaster="objects: .clickable">
+            <a-entity geometry="primitive:plane" material="src: #cam; transparent: true; opacity: 0.2;"
+                scale="0.5 0.5 0.5" position="0 -2 -3" onclick="takeScreenshot()" class="clickable"></a-entity>
+            <!-- Captions -->
+            <a-entity id="caption" visible="false" position="0 0 -1"
+                geometry="primitive:plane; width: 1.5; height: 0.15" material="color:#605f5c"
+                text="value: Test; color: #fff; align:center"></a-entity>
+            <!-- Photos taken -->
+            <a-image id="takenPhoto" scale="0.7 0.5 0.5" position="0 0.5 -1" visible="false"></a-image>
+        </a-camera>
+        <a-entity id="environment" gltf-model="#room" rotation="0 180 0" position="0 -4 0" scale="0.1 0.1 0.1">
+        </a-entity>
+        <a-sky color='#ECECEC'></a-sky>
+    </a-scene>
+</body>
+
+</html>
