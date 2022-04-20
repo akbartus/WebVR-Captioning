@@ -1,5 +1,5 @@
 # Image Captioning in Web VR
-![Screenshot](assets/screenshot.jpg)
+![Screenshot](img/screenshot.jpg)
 
 ### **Description / Rationale**
 This is small project, which shows the use of image captioning (machine learning task; model used: https://huggingface.co/nlpconnect/vit-gpt2-image-captioning) as used in Web VR. It was inspired by similar project created by [Misslivirose](https://github.com/misslivirose) titled [Scene Reader](https://github.com/misslivirose/scene-reader) which shows image captioning with Three.js and Microsoft Azure service.
