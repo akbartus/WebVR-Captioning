@@ -2,18 +2,13 @@
 ![Screenshot](assets/screenshot.jpg)
 
 ### **Description / Rationale**
-This is small toy project, which shows the use of image captioning (machine learning task) at work. 
+This is small project, which shows the use of image captioning (machine learning task, https://huggingface.co/nlpconnect/vit-gpt2-image-captioning) as used in Web VR. It was inspired by similar project created by [Misslivirose](https://github.com/misslivirose) titled  [Scene Reader](https://github.com/misslivirose/scene-reader  ) 
 
 
-### **Goals**
-The goals of the project are: 
-* To demonstrate new type of reading experience. 
-* To demonstrate advanced capabilities of web VR.
-* To create accessible VR reading experience.
 
 
-### **Structure**
-The reading platform offers 4 modes for reading: 
+### **Instructions**
+Click on The reading platform offers 4 modes for reading: 
 
 **1. User-generated reading environment (Simple Mode)** 
 In this mode users can use their own 360 photos or choose the default 3D model of a room or select one of five 3d environments and then upload a pdf file. The respective sound will be added automatically based on random selection (for now there are three types of sound: arts, tale and culture). In addition, there is a possibility to apply weather effects and toggle sound.
