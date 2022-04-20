@@ -10,9 +10,9 @@
 </head>
 
 <body>
-    <a-scene>
+    <a-scene gltf-model="dracoDecoderPath: decoder/">
         <a-assets>
-            <a-asset-item id="room" src="3d/room.glb"></a-asset-item>
+            <a-asset-item id="room" src="3d/big_room.glb"></a-asset-item>
             <img src="img/camera.png" id="cam">
         </a-assets>
         <a-entity id="task" position="0 0 -1" geometry="primitive:plane" material="color:#605f5c"
@@ -29,7 +29,7 @@
             <!-- Photos taken -->
             <a-image id="takenPhoto" scale="0.7 0.5 0.5" position="0 0.5 -1" visible="false"></a-image>
         </a-camera>
-        <a-entity id="environment" gltf-model="#room" rotation="0 180 0" position="0 -4 0" scale="0.1 0.1 0.1">
+        <a-entity id="environment" gltf-model="#room" rotation="0 180 0" position="0 -4 0" scale="0.5 0.5 0.5">
         </a-entity>
         <a-sky color='#ECECEC'></a-sky>
     </a-scene>
