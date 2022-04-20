@@ -16,4 +16,4 @@ The project uses A-Frame at its core with Hugging Face API.
 <p>3D model of the room was created by <b>Francesco Coldesina</b>, and taken from <a href="https://sketchfab.com/3d-models/big-room-0b5da073be88481091dbef7e55f1d180">Sketchfab.com</a></p>
 
 ### **Demo**
-To see the application at work: [Demo application](https://www.vr-reader.com)
+To see the application at work: [Demo application](https://image-captioning.glitch.me/)
