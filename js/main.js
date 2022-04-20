@@ -35,7 +35,7 @@ var takenPhoto = document.querySelector("#takenPhoto");
                 caption.setAttribute("visible", false);
                 if (json_response.data[0].includes("bicycle")) {
                     caption.setAttribute("visible", true);
-                    caption.setAttribute("text", "value: You found it!");
+                    caption.setAttribute("text", "value: You found it! It is bicycle!");
                     setTimeout(() => {
                         environment.setAttribute("animation", "property: position; to: 0 -5 -40; dur: 2000; easing: linear;");
                         caption.setAttribute("visible", false);
